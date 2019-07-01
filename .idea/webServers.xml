@@ -3,9 +3,9 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="c569ad2d-2877-488b-81d5-1ee0f9e6403b" name="rezvov.com" url="http://rezvov.com">
-        <fileTransfer host="23.239.118.194" port="21" rootFolder="/public_html">
+        <fileTransfer host="23.239.118.194" port="21">
           <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" maxConnections="3" passiveMode="true" shareSSLContext="true" showHiddenFiles="true" />
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="30000" maxConnections="1" passiveMode="true" shareSSLContext="true" showHiddenFiles="true" />
           </advancedOptions>
           <option name="port" value="21" />
         </fileTransfer>
