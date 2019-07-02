@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const webpack = require('webpack')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const path = require('path');
 
@@ -63,17 +64,17 @@ module.exports = {
                 'file-loader'
             ]
         },
-        {
-            test: /\.(png|jpg|gif)$/i,
-            use: [
-                {
-                    loader: 'url-loader',
-                    options: {
-                        limit: 50*1024,
-                    },
-                },
-            ],
-        },
+        // {
+        //     test: /\.(png|jpg|gif)$/i,
+        //     use: [
+        //         {
+        //             loader: 'url-loader',
+        //             options: {
+        //                 limit: 100000,
+        //             },
+        //         },
+        //     ],
+        // },
         ]
     },
     plugins: [
@@ -85,6 +86,7 @@ module.exports = {
             $: "jquery/dist/jquery.min.js",
             jQuery: "jquery/dist/jquery.min.js",
             "window.jQuery": "jquery/dist/jquery.min.js"
-        })
+        }),
+        new CleanWebpackPlugin()
     ]
 };
