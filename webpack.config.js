@@ -1,6 +1,8 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const webpack = require('webpack')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
+const GoogleFontsPlugin = require('google-fonts-plugin');
 
 const path = require('path');
 
@@ -40,16 +42,6 @@ module.exports = {
             ]
         },
         {
-            test: /\.(png|svg|jpg|gif)$/i,
-            use: [{
-                loader: 'file-loader',
-                options: {
-                    name: '[name].[ext]',
-                    outputPath: 'images/'
-                }
-            }]
-        },
-        {
             test: /\.(html)$/,
             use: {
                 loader: 'html-loader',
@@ -59,10 +51,24 @@ module.exports = {
             }
         },
         {
+            test: /\.(png|svg|jpg|gif)$/i,
+            use: [{
+                loader: 'file-loader',
+                options: {
+                    name: '[name].[ext]',
+                    outputPath: 'img/'
+                }
+            }]
+        },
+        {
             test: /\.(woff|woff2|eot|ttf|otf)$/i,
-            use: [
-                'file-loader'
-            ]
+            use: [{
+                loader: 'file-loader',
+                options: {
+                    name: '[name].[ext]',
+                    outputPath: 'fonts/'
+                }
+            }],
         },
         // {
         //     test: /\.(png|jpg|gif)$/i,
@@ -80,13 +86,41 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             filename:'index.html',
-            template: 'src/indexn.html'
+            template: 'src/index.html'
         }),
         new webpack.ProvidePlugin({
-            $: "jquery/dist/jquery.min.js",
-            jQuery: "jquery/dist/jquery.min.js",
-            "window.jQuery": "jquery/dist/jquery.min.js"
+            $: "jquery",
+            jQuery: "jquery",
+            "window.jQuery": "jquery"
         }),
-        new CleanWebpackPlugin()
+        new CleanWebpackPlugin(),
+        new CopyPlugin([
+            { from: 'src/.htaccess'},
+            { from: 'src/robots.txt'},
+        ]),
+        //https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:100,300,400
+        // new GoogleFontsPlugin({
+        //     fonts: [
+        //         {
+        //             family: "Montserrat",
+        //             variants: [
+        //                 "400",
+        //                 "700",
+        //             ]
+        //         },
+        //         {
+        //             family: "Roboto",
+        //             "variants": [
+        //                 "100",
+        //                 "300",
+        //                 "400"
+        //             ]
+        //         }
+        //     ],
+        //     formats: [
+        //         "woff",
+        //         "woff2"
+        //     ]
+        // })
     ]
 };

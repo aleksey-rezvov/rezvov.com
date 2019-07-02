@@ -24,8 +24,12 @@ jQuery(function ($) {
     // Sticky Sidebar
     // --------------------------------------------------------------------
     const sidebar = jQuery('.left-col-block, .right-col-block');
-    if(jQuery.isEmptyObject(sidebar)){
+    if(sidebar.length){
+
         sidebar.theiaStickySidebar();
+    }
+    else {
+        console.log(`jQuery('.left-col-block, .right-col-block') returned empty object. Sticky sidebar didn't set.`);
     }
 
 }); // JQuery end
