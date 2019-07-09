@@ -86,11 +86,17 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             filename:'index.html',
-            template: 'src/index.html'
+            template: 'src/index.html',
+            minify: {
+                collapseWhitespace: true
+            }
         }),
         new HtmlWebpackPlugin({
             filename:'404.html',
-            template: 'src/404.html'
+            template: 'src/404.html',
+            minify: {
+                collapseWhitespace: true
+            }
         }),
         new webpack.ProvidePlugin({
             $: "jquery",
