@@ -1,8 +1,10 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const webpack = require('webpack')
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
-const GoogleFontsPlugin = require('google-fonts-plugin');
+const TerserJSPlugin = require('terser-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 const path = require('path');
 
@@ -19,6 +21,22 @@ module.exports = {
     devServer: {
         contentBase: './dist'
     },
+    optimization: {
+        minimizer: [
+            new TerserJSPlugin({
+                terserOptions: {
+                    output: {
+                        comments: false,
+                    },
+                }
+            }),
+            new OptimizeCSSAssetsPlugin({
+                cssProcessorPluginOptions: {
+                    preset: ['default', { discardComments: { removeAll: true } }],
+                },
+            })
+        ],
+    },
     module: {
         rules: [
         {
@@ -26,7 +44,7 @@ module.exports = {
             include: path.resolve(__dirname, 'src/css'),
             use: [
                 {
-                    loader: "style-loader",
+                    loader: MiniCssExtractPlugin.loader,
                     options: {}
                 },
                 {
@@ -38,17 +56,11 @@ module.exports = {
                     options: {
                         sourceMap: true
                     }
-                }
+                },
             ]
         },
-        // {
-        //     test: /\.(html)$/,
-        //     include: path.resolve(__dirname, "src/html/includes"),
-        //     use: ["raw-loader"]
-        // },
         {
             test: /\.(html)$/,
-            // include: path.resolve(__dirname, "src/html/views"),
             use: {
                 loader: 'html-loader',
                 options: {
@@ -77,18 +89,6 @@ module.exports = {
                 }
             }],
         },
-
-        // {
-        //     test: /\.(png|jpg|gif)$/i,
-        //     use: [
-        //         {
-        //             loader: 'url-loader',
-        //             options: {
-        //                 limit: 100000,
-        //             },
-        //         },
-        //     ],
-        // },
         ]
     },
     plugins: [
@@ -99,13 +99,15 @@ module.exports = {
                 collapseWhitespace: true
             }
         }),
-        // new HtmlWebpackPlugin({
-        //     filename:'404.html',
-        //     template: 'src/html/404.html',
-        //     minify: {
-        //         collapseWhitespace: true
-        //     }
-        // }),
+        new HtmlWebpackPlugin({
+            filename:'404.html',
+            template: 'src/html/views/404.html',
+            minify: {
+                collapseWhitespace: true
+            }
+        }),
+        new MiniCssExtractPlugin({
+        }),
         new webpack.ProvidePlugin({
             $: "jquery",
             jQuery: "jquery",
@@ -113,32 +115,7 @@ module.exports = {
         }),
         new CleanWebpackPlugin(),
         new CopyPlugin([
-            { from: 'src/.htaccess'},
             { from: 'src/robots.txt'},
         ]),
-        //https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:100,300,400
-        // new GoogleFontsPlugin({
-        //     fonts: [
-        //         {
-        //             family: "Montserrat",
-        //             variants: [
-        //                 "400",
-        //                 "700",
-        //             ]
-        //         },
-        //         {
-        //             family: "Roboto",
-        //             "variants": [
-        //                 "100",
-        //                 "300",
-        //                 "400"
-        //             ]
-        //         }
-        //     ],
-        //     formats: [
-        //         "woff",
-        //         "woff2"
-        //     ]
-        // })
     ]
 };
