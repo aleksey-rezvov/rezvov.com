@@ -41,12 +41,19 @@ module.exports = {
                 }
             ]
         },
+        // {
+        //     test: /\.(html)$/,
+        //     include: path.resolve(__dirname, "src/html/includes"),
+        //     use: ["raw-loader"]
+        // },
         {
             test: /\.(html)$/,
+            // include: path.resolve(__dirname, "src/html/views"),
             use: {
                 loader: 'html-loader',
                 options: {
-                    attrs: ['img:src', 'link:href']
+                    attrs: ['img:src', 'link:href'],
+                    interpolate: true
                 }
             }
         },
@@ -70,6 +77,7 @@ module.exports = {
                 }
             }],
         },
+
         // {
         //     test: /\.(png|jpg|gif)$/i,
         //     use: [
@@ -86,18 +94,18 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             filename:'index.html',
-            template: 'src/index.html',
+            template: './src/html/views/index.html',
             minify: {
                 collapseWhitespace: true
             }
         }),
-        new HtmlWebpackPlugin({
-            filename:'404.html',
-            template: 'src/404.html',
-            minify: {
-                collapseWhitespace: true
-            }
-        }),
+        // new HtmlWebpackPlugin({
+        //     filename:'404.html',
+        //     template: 'src/html/404.html',
+        //     minify: {
+        //         collapseWhitespace: true
+        //     }
+        // }),
         new webpack.ProvidePlugin({
             $: "jquery",
             jQuery: "jquery",
