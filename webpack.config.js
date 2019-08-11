@@ -103,6 +103,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename:'find-cto.html',
             template: './src/html/views/find-cto.html',
+            title: "Найду CTO для вашего проекта",
             minify: {
                 collapseWhitespace: true
             }

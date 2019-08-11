@@ -4,9 +4,44 @@
 @import "resumex.css";
 
 /* Additions for rezvov.com */
+//
+//$link-color: #FFC107;
+//$link-focused-color: #ff9800;
 
-$link-color: #FFC107;
+$link-color: #B38207;
+$link-focused-color: #ff9800;
 $done-list-padding: 1.5em;
+
+a {
+    color              : $link-color;
+    text-decoration    : none;
+    -webkit-transition : all 0.3s ease 0s;
+    -moz-transition    : all 0.3s ease 0s;
+    -o-transition      : all 0.3s ease 0s;
+    transition         : all 0.3s ease 0s;
+}
+
+a,
+a:active,
+a:focus,
+a:active {
+    text-decoration : none;
+    outline         : none
+}
+
+a:hover,
+a:focus {
+    text-decoration : none;
+    color           : $link-focused-color;
+}
+
+.btn-primary {
+    background-color : $link-color;
+}
+
+.progress-item .progress-bar {
+    background-color : $link-color;
+}
 
 ul.done-list {
     list-style: none;
@@ -68,24 +103,3 @@ ul.address-list {
 
     }
 }
-
-//button.detailed-skills {
-//    color: #333333;
-//    background-color: white;
-//}
-
-//.address-title{
-//    margin-bottom: 0.5em;
-//
-//    //&:before {
-//    //    content: "\f041";
-//    //    color: $link-color;
-//    //    font-family: FontAwesome;
-//    //}
-//}
-//
-//i.contact-address{
-//    color: $link-color;
-//    float:left;
-//}
-
