@@ -100,6 +100,13 @@ module.exports = {
             }
         }),
         new HtmlWebpackPlugin({
+            filename:'cto.html',
+            template: './src/html/views/cto-draft.html',
+            minify: {
+                collapseWhitespace: true
+            }
+        }),
+        new HtmlWebpackPlugin({
             filename:'404.html',
             template: 'src/html/views/404.html',
             minify: {
