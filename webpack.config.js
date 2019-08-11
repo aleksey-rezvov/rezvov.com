@@ -5,6 +5,7 @@ const CopyPlugin = require('copy-webpack-plugin');
 const TerserJSPlugin = require('terser-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const SitemapPlugin = require('sitemap-webpack-plugin').default;
 
 const path = require('path');
 
@@ -106,6 +107,13 @@ module.exports = {
                 collapseWhitespace: true
             }
         }),
+        new SitemapPlugin('https://rezvov.com', [
+            '/',
+            '/find-cto'
+            ], {
+            lastMod: true,
+            }
+        ),
         new HtmlWebpackPlugin({
             filename:'404.html',
             template: 'src/html/views/404.html',
