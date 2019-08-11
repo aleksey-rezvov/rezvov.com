@@ -100,8 +100,8 @@ module.exports = {
             }
         }),
         new HtmlWebpackPlugin({
-            filename:'cto.html',
-            template: './src/html/views/cto-draft.html',
+            filename:'find-cto.html',
+            template: './src/html/views/find-cto.html',
             minify: {
                 collapseWhitespace: true
             }
