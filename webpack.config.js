@@ -126,6 +126,10 @@ module.exports = {
             to: 'yandex_eba83ee651ca233d.html',
             from: 'src/html/yandex_eba83ee651ca233d.html',
         }]),
+        new CopyPlugin([{
+            to: 'googledfcc307aa0d9094c.html',
+            from: 'src/html/googledfcc307aa0d9094c.html',
+        }]),
         new MiniCssExtractPlugin({
         }),
         new webpack.ProvidePlugin({
