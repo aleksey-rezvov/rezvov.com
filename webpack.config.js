@@ -122,6 +122,13 @@ module.exports = {
                 collapseWhitespace: true
             }
         }),
+        new HtmlWebpackPlugin({
+            filename:'yandex_eba83ee651ca233d.html',
+            template: 'src/html/views/yandex_eba83ee651ca233d.html',
+            minify: {
+                collapseWhitespace: true
+            }
+        }),
         new MiniCssExtractPlugin({
         }),
         new webpack.ProvidePlugin({
