@@ -1,4 +1,8 @@
-${require('./../includes/header.html')}
+
+${require('underscore-node')
+.template(require('./../includes/header.html'))({
+title: "найду CTO для вашего проекта"
+})}
 
 <section class="expertise-wrapper section-wrapper gray-bg">
     <div class="container-fluid">

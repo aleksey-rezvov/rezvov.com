@@ -103,7 +103,6 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename:'find-cto.html',
             template: './src/html/views/find-cto.html',
-            title: "Найду CTO для вашего проекта",
             minify: {
                 collapseWhitespace: true
             }
@@ -122,14 +121,11 @@ module.exports = {
                 collapseWhitespace: true
             }
         }),
-        new CopyPlugin([{
-            to: 'yandex_eba83ee651ca233d.html',
-            from: 'src/html/yandex_eba83ee651ca233d.html',
-        }]),
-        new CopyPlugin([{
-            to: 'googledfcc307aa0d9094c.html',
-            from: 'src/html/googledfcc307aa0d9094c.html',
-        }]),
+        new CopyPlugin([
+                {from: 'src/html/yandex_eba83ee651ca233d.html'},
+                {from: 'src/html/googledfcc307aa0d9094c.html'},
+                {from: 'src/robots.txt'}
+            ]),
         new MiniCssExtractPlugin({
         }),
         new webpack.ProvidePlugin({
@@ -138,8 +134,5 @@ module.exports = {
             "window.jQuery": "jquery"
         }),
         new CleanWebpackPlugin(),
-        new CopyPlugin([
-            { from: 'src/robots.txt'},
-        ]),
     ]
 };
