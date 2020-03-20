@@ -103,3 +103,37 @@ ul.address-list {
 
     }
 }
+
+// Printing
+@media print {
+    @page {
+        size: A4 portrait;
+    }
+
+    body {
+        background-image: none;
+
+    }
+
+    .columns-block {
+        display: block;
+        margin: 0;
+    }
+
+    .header {
+        margin-bottom: -50px;
+        //padding-bottom: -50px;
+    }
+
+    .section-wrapper {
+        padding-top: 0;
+    }
+
+    .header {
+        text-align: left;
+    }
+
+    .profile-img, .social-icon, .footer {
+        display: none;
+    }
+}

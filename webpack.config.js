@@ -107,6 +107,13 @@ module.exports = {
                 collapseWhitespace: true
             }
         }),
+        new HtmlWebpackPlugin({
+            filename:'development-review.html',
+            template: './src/html/views/development-review.html',
+            minify: {
+                collapseWhitespace: true
+            }
+        }),
         new SitemapPlugin('https://rezvov.com', [
             '/',
             '/find-cto'
