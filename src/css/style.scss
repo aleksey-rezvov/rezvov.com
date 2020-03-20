@@ -12,6 +12,13 @@ $link-color: #B38207;
 $link-focused-color: #ff9800;
 $done-list-padding: 1.5em;
 
+
+.title {
+    line-height: 1.1em;
+    font-weight: 700;
+    font-size: 20px;
+}
+
 a {
     color              : $link-color;
     text-decoration    : none;
