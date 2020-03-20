@@ -116,7 +116,8 @@ module.exports = {
         }),
         new SitemapPlugin('https://rezvov.com', [
             '/',
-            '/find-cto'
+            '/find-cto',
+            '/development-review'
             ], {
             lastMod: true,
             }
