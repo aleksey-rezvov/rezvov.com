@@ -129,9 +129,10 @@ module.exports = {
             }
         }),
         new SitemapPlugin('https://rezvov.com', [
-            '/',
-            '/find-cto',
-            '/development-review'
+            '/en/',
+            '/ru/',
+            '/ru/find-cto',
+            '/ru/development-review'
             ], {
             lastMod: true,
             }
