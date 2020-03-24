@@ -95,20 +95,34 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             filename:'index.html',
-            template: './src/html/views/index.html',
+            template: './src/html/views/language.html',
             minify: {
                 collapseWhitespace: true
             }
         }),
         new HtmlWebpackPlugin({
-            filename:'find-cto.html',
+            filename:'en/index.html',
+            template: './src/html/views/main-en.html',
+            minify: {
+                collapseWhitespace: true
+            }
+        }),
+        new HtmlWebpackPlugin({
+            filename:'ru/index.html',
+            template: './src/html/views/main-ru.html',
+            minify: {
+                collapseWhitespace: true
+            }
+        }),
+        new HtmlWebpackPlugin({
+            filename:'ru/find-cto/index.html',
             template: './src/html/views/find-cto.html',
             minify: {
                 collapseWhitespace: true
             }
         }),
         new HtmlWebpackPlugin({
-            filename:'development-review.html',
+            filename:'ru/development-review/index.html',
             template: './src/html/views/development-review.html',
             minify: {
                 collapseWhitespace: true

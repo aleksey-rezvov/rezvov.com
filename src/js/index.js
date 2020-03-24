@@ -1,35 +1,44 @@
+'use strict';
+
 import jQuery from 'jquery';
 import popper from 'popper.js';
 import bootstrap from 'bootstrap';
 import sidebar from 'theia-sticky-sidebar';
-
+import {getNavigatorLanguage} from './utils'
 
 import '../css/style.scss';
+import '../img/arezvov.png';
+import '../favicon.png';
 
-jQuery(function ($) {
+const location = window.location.pathname;
+console.info( `location ${location} `);
+if(location == '/') {
+    const lang = getNavigatorLanguage() || 'en';
+    window.location.replace(`/${lang}/`);
+}
+else {
+    jQuery(function ($) {
+        // --------------------------------------------------------------------
+        // PreLoader
+        // --------------------------------------------------------------------
 
-    'use strict';
-
-    // --------------------------------------------------------------------
-    // PreLoader
-    // --------------------------------------------------------------------
-
-    (function () {
-        jQuery('#preloader').delay(200).fadeOut('slow');
-    }());
+        (function () {
+            jQuery('#preloader').delay(200).fadeOut('slow');
+        }());
 
 
 
-    // --------------------------------------------------------------------
-    // Sticky Sidebar
-    // --------------------------------------------------------------------
-    const sidebar = jQuery('.left-col-block, .right-col-block');
-    if(sidebar.length){
+        // --------------------------------------------------------------------
+        // Sticky Sidebar
+        // --------------------------------------------------------------------
+        const sidebar = jQuery('.left-col-block, .right-col-block');
+        if(sidebar.length){
 
-        sidebar.theiaStickySidebar();
-    }
-    else {
-        console.log(`jQuery('.left-col-block, .right-col-block') returned empty object. Sticky sidebar didn't set.`);
-    }
+            sidebar.theiaStickySidebar();
+        }
+        else {
+            console.log(`jQuery('.left-col-block, .right-col-block') returned empty object. Sticky sidebar didn't set.`);
+        }
 
-}); // JQuery end
+    }); // JQuery end
+}
