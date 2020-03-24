@@ -122,7 +122,21 @@ module.exports = {
             }
         }),
         new HtmlWebpackPlugin({
+            filename:'find-cto/index.html',
+            template: './src/html/views/find-cto.html',
+            minify: {
+                collapseWhitespace: true
+            }
+        }),
+        new HtmlWebpackPlugin({
             filename:'ru/development-review/index.html',
+            template: './src/html/views/development-review.html',
+            minify: {
+                collapseWhitespace: true
+            }
+        }),
+        new HtmlWebpackPlugin({
+            filename:'development-review/index.html',
             template: './src/html/views/development-review.html',
             minify: {
                 collapseWhitespace: true
