@@ -13,7 +13,10 @@ import '../favicon.png';
 const location = window.location.pathname;
 console.info( `location ${location} `);
 if(location == '/') {
-    const lang = getNavigatorLanguage() || 'en';
+    let lang = getNavigatorLanguage();
+    if(lang != 'ru') {
+        lang = 'en'
+    }
     window.location.replace(`/${lang}/`);
 }
 else {
