@@ -8,10 +8,10 @@ import {getNavigatorLanguage} from './utils'
 
 import '../css/style.scss';
 import '../img/arezvov.png';
-import '../favicon.png';
+import '../img/favicon.png';
 
 const location = window.location.pathname;
-console.info( `location ${location} `);
+// console.info( `location ${location} `);
 if(location == '/') {
     let lang = getNavigatorLanguage();
     if(lang != 'ru') {
@@ -36,12 +36,10 @@ else {
         // --------------------------------------------------------------------
         const sidebar = jQuery('.left-col-block, .right-col-block');
         if(sidebar.length){
-
             sidebar.theiaStickySidebar();
         }
         else {
             console.log(`jQuery('.left-col-block, .right-col-block') returned empty object. Sticky sidebar didn't set.`);
         }
-
     }); // JQuery end
 }

@@ -107,29 +107,46 @@ ul.address-list {
         &.contact-skype:before {
             content: "\f17e";
         }
-
+        &.contact-website:before {
+            content: "\f0ac";
+        }
     }
+}
+ul.services-list {
+    list-style: none;
+    padding: 0;
+
+    li {
+        margin-bottom: 0.6em;
+    }
+}
+
+.print-only {
+    display: none;
 }
 
 // Printing
 @media print {
+    .print-only {
+        display: block;
+    }
+
     @page {
         size: A4 portrait;
     }
 
     body {
         background-image: none;
-
-    }
-
-    .columns-block {
-        display: block;
-        margin: 0;
     }
 
     .header {
+        position: static !important;
+        width: auto !important;
+    }
+
+    .left-col-block {
+        min-height: 0 !important;
         margin-bottom: -50px;
-        //padding-bottom: -50px;
     }
 
     .section-wrapper {
@@ -140,9 +157,14 @@ ul.address-list {
         text-align: left;
     }
 
-    .profile-img, .social-icon, .footer {
+    .profile-img, .social-icon, .footer, .lang-chooser, .print-action {
         display: none;
     }
+    .collapse {
+        display: block;
+    }
+
+    a[href]:after { content: " (https://rezvov.com"attr(href)")"; }
 }
 
 .lang-chooser {

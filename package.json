@@ -9,7 +9,7 @@
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
     "watch": "webpack --mode development --watch",
-    "start": "webpack-dev-server --watch --mode development"
+    "start": "webpack-dev-server --watch --mode development --host 0.0.0.0 --port 8201"
   },
   "repository": {
     "type": "git",

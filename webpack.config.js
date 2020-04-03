@@ -142,11 +142,19 @@ module.exports = {
                 collapseWhitespace: true
             }
         }),
+        new HtmlWebpackPlugin({
+            filename:'ru/establish-remote-development/index.html',
+            template: './src/html/views/establish-remote-development.html',
+            minify: {
+                collapseWhitespace: true
+            }
+        }),
         new SitemapPlugin('https://rezvov.com', [
             '/en/',
             '/ru/',
-            '/ru/find-cto',
-            '/ru/development-review'
+            '/ru/find-cto/',
+            '/ru/development-review/',
+            '/ru/establish-remote-development/'
             ], {
             lastMod: true,
             }
