@@ -7,28 +7,26 @@ export default function About() {
           <p>
             I'm a technical leader with <strong className="text-white">18+ years</strong> of experience 
             in software development, starting from computer vision systems to modern AI-powered solutions. 
-            My journey spans from C++ development at <strong className="text-white">Altami Studio</strong> 
-            (microscopy imaging) to leading large-scale enterprise projects.
+            My journey spans from C++ development at <strong className="text-white">Altami Studio</strong> (microscopy imaging) to leading large-scale enterprise projects.
           </p>
           <p>
             Throughout my career, I've led teams of up to <strong className="text-white">50 engineers</strong>, 
-            managed projects with budgets exceeding <strong className="text-white">$1 million</strong> (with multiple 
-            projects in this range), and conducted <strong className="text-white">2000+ interviews</strong> while 
+            managed projects with budgets exceeding <strong className="text-white">$10 millions</strong>, and conducted <strong className="text-white">2000+ interviews</strong> while 
             hiring <strong className="text-white">1000+ specialists</strong>. I've architected and delivered 
-            <strong className="text-white"> 54+ projects</strong> across various industries.
+            <strong className="text-white"> 35+ projects</strong> across various industries.
           </p>
           <p>
-            I founded <strong className="text-white">ForEach Partners</strong>, an alliance of 100+ specialists 
+            I founded <a href="https://foreachpartners.com/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 underline transition-colors"><strong>ForEach Partners</strong></a>, an alliance of 100+ specialists 
             working together to deliver complex software solutions. Our unique developer-led partnership model 
-            emphasizes direct communication, technical excellence, and cost efficiency. I've also implemented 
-            <strong className="text-white"> ISO 9000/9001</strong> quality management systems.
+            emphasizes direct communication, technical excellence, and cost efficiency.
           </p>
           <p>
             My current focus is on <strong className="text-blue-400">AI and LLM-powered systems</strong>, where 
             I've developed proprietary solutions like <strong className="text-blue-400">ExoChat</strong> to solve 
-            real-world challenges in production AI applications. I've worked with enterprise clients including 
-            <strong className="text-white"> PepsiCo</strong>, <strong className="text-white">MegaFon</strong>, 
-            major Russian banks, and helped a popular social network handle <strong className="text-white">30x load surges</strong>.
+            real-world challenges in production AI applications. I've worked with enterprise clients across 
+            <strong className="text-white"> FMCG</strong>, <strong className="text-white">telecommunications</strong>, 
+            <strong className="text-white"> financial services</strong>, and <strong className="text-white">social media</strong> sectors, 
+            helping them scale systems to handle <strong className="text-white">30x load surges</strong> and deliver mission-critical solutions.
           </p>
         </div>
       </div>

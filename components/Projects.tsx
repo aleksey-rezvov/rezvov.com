@@ -1,6 +1,12 @@
 export default function Projects() {
   const projects = [
     {
+      name: 'ForEach Partners',
+      url: 'https://foreachpartners.com',
+      description: 'Development Partnership Network',
+      tech: 'Go, Rust, Python, TypeScript, React, Next.js, Vue.js, Flutter, PostgreSQL, Kubernetes, Docker, OpenAI API',
+    },
+    {
       name: 'ExoChat',
       url: 'https://exo-chat.com',
       description: 'M2P Dialog Framework for building controlled AI conversations',
@@ -11,12 +17,6 @@ export default function Projects() {
       url: 'https://stamina.chat',
       description: 'AI Psychologist mobile application',
       tech: 'LLM, Flutter, Django',
-    },
-    {
-      name: 'ForEach Partners',
-      url: 'https://foreachpartners.com',
-      description: 'Development Partnership Network',
-      tech: 'Team Leadership, Process Optimization',
     },
     {
       name: 'Oktend',

@@ -17,7 +17,7 @@ export default function Hero() {
               Building AI-powered solutions that scale
             </p>
             <p className="text-base sm:text-lg text-zinc-500">
-              Based in Belgrade, Serbia. Available globally.
+              Based in Europe. Available globally.
             </p>
             <div className="pt-4">
               <a
