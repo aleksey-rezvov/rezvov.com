@@ -75,6 +75,36 @@ The deployment is handled by GitHub Actions workflow (`.github/workflows/deploy.
 2. **Build**: Installs dependencies and builds the Next.js static export
 3. **Deploy**: Uploads the `dist/` folder to GitHub Pages
 
+### Testing Deployment Before Merging to Main
+
+You can test the deployment workflow in your feature branch before merging to `main`:
+
+**Option 1: Test build on Pull Request**
+1. Create a pull request from your branch to `main`
+2. The workflow will automatically run and build your changes
+3. Check the **Actions** tab to see if the build succeeds
+4. Note: The build will run, but **won't deploy** to production (only `main` branch deploys)
+
+**Option 2: Test on `dev` branch**
+1. Push your changes to the `dev` branch:
+   ```bash
+   git checkout -b dev
+   git push origin dev
+   ```
+2. The workflow will build your changes (but won't deploy to production)
+3. Check the **Actions** tab to verify the build succeeds
+4. Once verified, merge to `main` for production deployment
+
+**Option 3: Manual workflow trigger**
+1. Go to repository → **Actions** tab
+2. Select "Deploy to GitHub Pages" workflow
+3. Click **"Run workflow"**
+4. Select your branch from the dropdown
+5. Click **"Run workflow"** button
+6. This will build your branch without deploying to production
+
+**Important**: Only pushes to `main` branch will actually deploy to GitHub Pages. Other branches only test the build process.
+
 ### Manual Deployment
 
 You can also trigger deployment manually:
