@@ -17,7 +17,7 @@ export default function Services() {
               <h3 className="text-xl font-semibold text-blue-400">Software Development with My Team</h3>
             </div>
             <p className="text-zinc-300 mb-4 text-sm sm:text-base">
-              <a href="https://foreachpartners.com/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 underline font-medium">ForEach Partners</a>
+              <a href="https://foreachpartners.com/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 underline font-medium" aria-label="ForEach Partners (opens in new tab)">ForEach Partners</a>
               {' '}— an alliance of 100+ well-coordinated specialists who have delivered dozens of successful projects.
             </p>
             <div className="grid sm:grid-cols-2 gap-4 text-sm text-zinc-300">

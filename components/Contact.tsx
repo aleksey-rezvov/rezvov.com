@@ -45,15 +45,17 @@ export default function Contact() {
         <div className="grid sm:grid-cols-2 gap-3 sm:gap-4">
           {links.map((link) => {
             const IconComponent = link.icon;
+            const isExternal = link.url.startsWith('http');
             return (
               <a
                 key={link.name}
                 href={link.url}
-                target={link.url.startsWith('http') ? '_blank' : undefined}
-                rel={link.url.startsWith('http') ? 'noopener noreferrer' : undefined}
+                target={isExternal ? '_blank' : undefined}
+                rel={isExternal ? 'noopener noreferrer' : undefined}
                 className="flex items-center space-x-3 sm:space-x-4 p-3 sm:p-4 bg-zinc-800/50 rounded-lg border border-zinc-700 hover:border-blue-500 transition-colors group"
+                aria-label={isExternal ? `${link.name} (opens in new tab)` : link.name}
               >
-                <IconComponent className="w-5 h-5 sm:w-6 sm:h-6 text-zinc-400 group-hover:text-blue-400 transition-colors" />
+                <IconComponent className="w-5 h-5 sm:w-6 sm:h-6 text-zinc-400 group-hover:text-blue-400 transition-colors" aria-hidden="true" />
                 <span className="text-sm sm:text-base text-white group-hover:text-blue-400 transition-colors">
                   {link.name}
                 </span>

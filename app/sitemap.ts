@@ -2,10 +2,12 @@ import { MetadataRoute } from 'next';
 
 export const dynamic = 'force-static';
 
+const baseUrl = 'https://rezvov.com';
+
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: 'https://rezvov.com',
+      url: baseUrl,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 1,

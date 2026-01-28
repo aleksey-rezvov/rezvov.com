@@ -47,6 +47,7 @@ export default function Hero() {
               <a
                 href="#contact"
                 className="inline-block px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-all duration-300 glow-blue hover:shadow-[0_0_32px_rgba(59,130,246,0.4)]"
+                aria-label="Go to contact section to get in touch"
               >
                 Get in Touch
               </a>

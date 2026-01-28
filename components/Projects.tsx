@@ -32,7 +32,7 @@ export default function Projects() {
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 sm:mb-6">Projects & Products</h2>
         <p className="text-zinc-300 mb-6 sm:mb-8">
           For full portfolio, see{' '}
-          <a href="https://foreachpartners.com/portfolio" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">
+          <a href="https://foreachpartners.com/portfolio" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline" aria-label="Full portfolio on foreachpartners.com (opens in new tab)">
             foreachpartners.com/portfolio
           </a>
         </p>
@@ -44,6 +44,7 @@ export default function Projects() {
               target="_blank"
               rel="noopener noreferrer"
               className="block bg-zinc-800/50 p-4 sm:p-6 rounded-lg border border-zinc-700 hover:border-blue-500 hover:bg-zinc-800/80 hover:scale-[1.01] transition-all duration-200 group"
+              aria-label={`${project.name} - ${project.description} (opens in new tab)`}
             >
               <h3 className="text-lg sm:text-xl font-semibold text-white mb-2 group-hover:text-blue-400 transition-colors">
                 {project.name}

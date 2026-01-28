@@ -91,7 +91,7 @@ export default function Expertise() {
 
         {/* Bento: Real-World Challenges — interactive tiles */}
         <div className="mb-8 sm:mb-12">
-          <h4 className="text-lg font-semibold text-white mb-4">Real-World AI Challenges We Solve</h4>
+          <h3 className="text-lg font-semibold text-white mb-4">Real-World AI Challenges We Solve</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
             {aiChallenges.map((row) => (
               <div key={row.challenge} className={`${cardBase} p-4`}>
@@ -209,7 +209,7 @@ export default function Expertise() {
               <h4 className="text-lg font-semibold text-white">Psychological Support</h4>
             </div>
             <p className="text-sm text-zinc-300 mb-2">
-              Partnership with <a href="https://eantro.com" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">Eantro</a> — ICF-certified psychologists and coaches: addressing fears, reframing AI as augmentation, guided practice, safe space for concerns, career planning with AI skills.
+              Partnership with <a href="https://eantro.com" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline" aria-label="Eantro - ICF-certified psychologists and coaches (opens in new tab)">Eantro</a> — ICF-certified psychologists and coaches: addressing fears, reframing AI as augmentation, guided practice, safe space for concerns, career planning with AI skills.
             </p>
           </div>
         </div>
