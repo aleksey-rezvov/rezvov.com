@@ -1,16 +1,26 @@
-import { Mail, Linkedin, Github, FileText } from 'lucide-react';
+import { Mail, Linkedin, Github, FileText, MessageCircle, Calendar } from 'lucide-react';
 
 export default function Contact() {
   const links = [
+    {
+      name: 'LinkedIn',
+      url: 'https://www.linkedin.com/in/arezvov/',
+      icon: Linkedin,
+    },
+    {
+      name: 'Blog',
+      url: 'https://blog.rezvov.com/',
+      icon: FileText,
+    },
     {
       name: 'Email',
       url: 'mailto:mail@rezvov.com',
       icon: Mail,
     },
     {
-      name: 'LinkedIn',
-      url: 'https://www.linkedin.com/in/arezvov/',
-      icon: Linkedin,
+      name: 'Telegram',
+      url: 'https://t.me/arezvov',
+      icon: MessageCircle,
     },
     {
       name: 'GitHub',
@@ -18,9 +28,9 @@ export default function Contact() {
       icon: Github,
     },
     {
-      name: 'Blog',
-      url: 'https://blog.rezvov.com/',
-      icon: FileText,
+      name: 'Book a meeting',
+      url: 'https://koalendar.com/e/meet-alex-rezvov',
+      icon: Calendar,
     },
   ];
 

@@ -19,6 +19,9 @@ export default function Header() {
             <a href="#about" className="text-zinc-400 hover:text-white transition-colors">
               About
             </a>
+            <a href="#services" className="text-zinc-400 hover:text-white transition-colors">
+              Services
+            </a>
             <a href="#expertise" className="text-zinc-400 hover:text-white transition-colors">
               Expertise
             </a>
@@ -61,6 +64,13 @@ export default function Header() {
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
+              </a>
+              <a
+                href="#services"
+                className="block text-zinc-400 hover:text-white transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Services
               </a>
               <a
                 href="#expertise"

@@ -14,7 +14,10 @@ export default function Hero() {
               CTO / Software Architect
             </h2>
             <p className="text-lg sm:text-xl md:text-2xl text-zinc-400 italic">
-              Building AI-powered solutions that scale
+              AI products. AI-powered processes.
+            </p>
+            <p className="text-base sm:text-lg text-zinc-500 max-w-xl">
+              I architect and build AI/LLM solutions — and leverage cutting-edge AI tools to accelerate development and empower teams.
             </p>
             <p className="text-base sm:text-lg text-zinc-500">
               Based in Europe. Available globally.

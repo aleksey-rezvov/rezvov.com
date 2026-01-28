@@ -29,7 +29,13 @@ export default function Projects() {
   return (
     <section id="projects" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto max-w-6xl">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-8 sm:mb-12">Projects & Products</h2>
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 sm:mb-6">Projects & Products</h2>
+        <p className="text-zinc-300 mb-6 sm:mb-8">
+          For full portfolio, see{' '}
+          <a href="https://foreachpartners.com/portfolio" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">
+            foreachpartners.com/portfolio
+          </a>
+        </p>
         <div className="grid md:grid-cols-2 gap-4 sm:gap-6">
           {projects.map((project) => (
             <a
