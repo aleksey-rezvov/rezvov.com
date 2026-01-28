@@ -6,12 +6,13 @@ export default function Footer() {
           <p className="text-zinc-400 text-xs sm:text-sm text-center md:text-left">
             © {new Date().getFullYear()} Alex Rezvov. All rights reserved.
           </p>
-          <div className="flex space-x-4 sm:space-x-6 text-xs sm:text-sm text-zinc-400">
+          <nav className="flex space-x-4 sm:space-x-6 text-xs sm:text-sm text-zinc-400" aria-label="Footer links">
             <a
               href="https://foreachpartners.com"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-white transition-colors"
+              aria-label="ForEach Partners (opens in new tab)"
             >
               ForEach Partners
             </a>
@@ -20,10 +21,11 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-white transition-colors"
+              aria-label="Oktend (opens in new tab)"
             >
               Oktend
             </a>
-          </div>
+          </nav>
         </div>
       </div>
     </footer>
