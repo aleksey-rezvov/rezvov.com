@@ -2,44 +2,43 @@ import { Cpu, Wrench, Users, BookOpen, Heart, Zap } from 'lucide-react';
 
 export default function Expertise() {
   const aiChallenges = [
-    { challenge: 'LLM Behavioral Instability', solution: 'State machine (FSM) with deterministic transitions' },
-    { challenge: 'Lack of Testability', solution: 'Structured dialog flows, branch testing, regression suites' },
-    { challenge: 'Compliance Requirements', solution: 'Audit trails, fact storage, PII masking, version control' },
-    { challenge: 'High Cost of Changes', solution: 'Visual editors for non-developers, scenario versioning' },
-    { challenge: 'Context Management', solution: 'Fact storage, artifact tracking, session profiles' },
-    { challenge: 'Multi-model Orchestration', solution: 'Policy-based routing, fallback strategies, cost optimization' },
+    { challenge: 'LLM Behavioral Instability', solution: 'Deterministic state machines (FSM) for predictable AI behavior' },
+    { challenge: 'Lack of Testability', solution: 'M2M (Model-to-Model) testing and structured regression suites' },
+    { challenge: 'Compliance & Safety', solution: 'Audit trails, PII masking, and strict safety guardrails' },
+    { challenge: 'High Cost of Changes', solution: 'Visual scenario editors for rapid non-dev iterations' },
+    { challenge: 'Context Management', solution: 'Fact storage, artifact tracking, and long-term memory' },
+    { challenge: 'Multi-model Orchestration', solution: 'Policy-based routing and cross-model fallback strategies' },
   ];
 
   const aiModels = [
-    { model: 'Claude Opus 4', vendor: 'Anthropic', use: 'Complex reasoning, architecture, code review' },
-    { model: 'Claude 3.5 Sonnet', vendor: 'Anthropic', use: 'Fast iteration, code generation, documentation' },
-    { model: 'GPT-4 / GPT-4o', vendor: 'OpenAI', use: 'General purpose, API integrations, embeddings' },
-    { model: 'Grok', vendor: 'xAI', use: 'Real-time information, unconventional perspectives' },
-    { model: 'Gemini Pro', vendor: 'Google', use: 'Multimodal, long context' },
-    { model: 'Llama 3.x', vendor: 'Meta', use: 'Self-hosted, privacy-sensitive' },
+    { model: 'GPT-5.2', vendor: 'OpenAI', use: 'Frontier reasoning, complex knowledge work, multi-step projects' },
+    { model: 'Claude 4.5 Opus', vendor: 'Anthropic', use: 'Advanced agentic tool use, memory, and coding' },
+    { model: 'Gemini 2.5 Pro', vendor: 'Google', use: 'Multimodal reasoning, 10M+ context processing' },
+    { model: 'Llama 4 Herd', vendor: 'Meta', use: 'Open-source frontier performance, self-hosted solutions' },
+    { model: 'Grok 3', vendor: 'xAI', use: 'Real-time information, unconventional perspectives' },
   ];
 
   const techStack = [
     { category: 'Languages', tech: 'Go, Rust, Python, TypeScript, C++, C#' },
-    { category: 'Databases', tech: 'PostgreSQL, Cassandra, MongoDB, Redis, MySQL, Vector DBs (Pinecone, Weaviate, Qdrant)' },
-    { category: 'LLM Providers', tech: 'OpenAI (GPT-4, Whisper), Claude (Opus, Sonnet), Gemini, Llama, Grok' },
-    { category: 'AI Frameworks', tech: 'LangChain, LlamaIndex, Hugging Face, spaCy, NLTK' },
-    { category: 'AI Orchestration', tech: 'n8n, Flowise, custom pipelines' },
-    { category: 'AI Infrastructure', tech: 'RAG, embeddings, semantic search, fine-tuning, prompt engineering' },
-    { category: 'Voice AI', tech: 'Retell AI, OpenAI Whisper, TTS/STT' },
-    { category: 'Computer Vision', tech: 'OpenCV, image analysis' },
+    { category: 'Databases', tech: 'PostgreSQL, Cassandra, MongoDB, Redis, Vector DBs (Pinecone, Qdrant)' },
+    { category: 'LLM Providers', tech: 'OpenAI (GPT-5.2), Anthropic (Claude 4.5), Google (Gemini 2.5), Meta (Llama 4)' },
+    { category: 'AI Frameworks', tech: 'LangChain, LlamaIndex, Transformers, spaCy, NLTK' },
+    { category: 'AI Accelerators', tech: 'n8n, Flowise, Bubble, FlutterFlow, v0, Lovable' },
+    { category: 'AI Infrastructure', tech: 'RAG, fine-tuning, semantic search, prompt engineering' },
+    { category: 'Voice AI', tech: 'Retell AI, OpenAI Whisper, TTS/STT integrations' },
+    { category: 'Computer Vision', tech: 'OpenCV, image analysis, microscopy imaging' },
     { category: 'Frontend', tech: 'React, Next.js, Vue.js, Nuxt.js' },
-    { category: 'Mobile', tech: 'Flutter, React Native, iOS native, Android native' },
-    { category: 'Infrastructure', tech: 'Kubernetes, Docker, gRPC, Kafka, Ansible, Terraform' },
+    { category: 'Mobile', tech: 'Flutter, React Native, iOS/Android native' },
+    { category: 'Infrastructure', tech: 'Kubernetes, Docker, Ansible, Terraform, gRPC, Kafka' },
   ];
 
   const teamRoles = [
-    { role: 'Developers', desc: 'AI writes boilerplate, suggests fixes, reviews PRs.', tools: 'Cursor IDE • Copilot • Code Review' },
-    { role: 'DevOps', desc: 'AI generates IaC configs and diagnoses cluster issues.', tools: 'Ansible • Terraform • K8s Diagnostics' },
+    { role: 'Developers', desc: 'AI writes boilerplate and reviews PRs. Routine coding takes minutes.', tools: 'Cursor IDE • GitHub Copilot • Code Review' },
+    { role: 'DevOps', desc: 'AI generates IaC and diagnoses cluster issues from logs.', tools: 'Ansible • Terraform • Cloud Code' },
     { role: 'Analysts', desc: 'AI maintains unified context across docs and tickets.', tools: 'Confluence • Google Docs • Jira' },
-    { role: 'QA/Testing', desc: 'AI generates test cases from specs and code.', tools: 'E2E • Load Tests • Test Generation' },
+    { role: 'QA (M2M)', desc: 'Model-to-Model testing. Autonomous agents validate non-deterministic AI.', tools: 'M2M Protocols • Agentic Testing' },
     { role: 'Project Manager', desc: 'AI analyzes complexity for estimates and drafts reports.', tools: 'Estimation • Risk Analysis • Reports' },
-    { role: 'SRE/Ops', desc: 'AI correlates alerts, suggests root causes, drafts runbooks.', tools: 'Monitoring • Incident Response' },
+    { role: 'SRE/Ops', desc: 'AI correlates alerts and drafts runbooks. MTTR drops significantly.', tools: 'Monitoring • Incident Response' },
     { role: 'Support', desc: 'AI drafts responses and keeps knowledge base current.', tools: 'Ticket AI • Knowledge Base Sync' },
     { role: 'Tech Writer', desc: 'AI drafts docs from code and generates changelogs.', tools: 'Doc Gen • API Docs • Changelogs' },
     { role: 'Security', desc: 'AI scans for vulnerabilities and checks compliance.', tools: 'Vuln Scan • Code Audit • Compliance' },
@@ -47,10 +46,10 @@ export default function Expertise() {
   ];
 
   const featuredProducts = [
-    { name: 'ExoChat', desc: 'M2P dialog engine solving LLM instability, testing, and compliance. State machine architecture for predictable, testable AI conversations.' },
-    { name: 'Stamina.chat', desc: 'AI psychologist mobile app using LLMs for mental health support. Production-grade reliability and user safety.' },
-    { name: 'Ainsys', desc: 'AI-powered prospecting and outreach automation with LLM orchestration for client material analysis.' },
-    { name: 'AI Voice Support', desc: 'Production-ready voice assistants for VoIP with natural interruption handling, multilingual support (OpenAI API, Flowise, Retell AI).' },
+    { name: 'ExoChat', desc: 'M2P: AI that talks like a human but stays under strict business control. Predictable, testable, and compliant.' },
+    { name: 'Stamina.chat', desc: 'AI psychologist with production-grade safety guardrails. Safe and reliable mental health support.' },
+    { name: 'Ainsys', desc: 'AI-powered prospecting and outreach automation with multi-model LLM orchestration.' },
+    { name: 'AI Voice Support', desc: 'Production-ready voice assistants with natural interruption handling and multilingual support.' },
   ];
 
   const cardBase = 'glass-card glass-card-hover bento-card-hover rounded-xl border border-zinc-700/50';

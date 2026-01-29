@@ -30,16 +30,16 @@ export default function About() {
                 <strong className="text-blue-400">AI-powered processes:</strong> Leveraging cutting-edge AI tools across the entire development lifecycle — from coding to DevOps to QA.
               </li>
               <li>
-                <strong className="text-blue-400">Team formation (AI-empowered):</strong> Building teams from the ForEach Partners network; organizing and empowering client teams with AI tools; hybrid augmentation.
+                <strong className="text-blue-400">Team formation (AI-empowered):</strong> Building high-performance teams from the ForEach Partners network; empowering client teams with AI-native cultures.
               </li>
               <li>
-                <strong className="text-blue-400">Development process consulting:</strong> Process organization with consistent AI integration, training teams on AI tools, shared rules and documentation procedures.
+                <strong className="text-blue-400">Development process consulting:</strong> Process organization with consistent AI integration, training teams on AI tools, and establishing AI-driven documentation and review procedures.
               </li>
               <li>
-                <strong className="text-blue-400">Product development partnership:</strong> Co-founding AI-powered products as technical co-founder (architecture, development, deployment).
+                <strong className="text-blue-400">Product development partnership:</strong> Acting as a technical co-founder to build and scale AI-powered products from architecture to deployment.
               </li>
               <li>
-                <strong className="text-blue-400">AI tooling consulting:</strong> Advising on development of AI-powered developer tools.
+                <strong className="text-blue-400">AI tooling consulting:</strong> Advising on the development of next-generation AI-powered developer tools.
               </li>
             </ul>
           </div>
