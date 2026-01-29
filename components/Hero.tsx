@@ -38,7 +38,7 @@ export default function Hero() {
               AI products. AI-powered processes.
             </p>
             <p className="text-base sm:text-lg text-zinc-500 max-w-xl">
-              I architect and build AI/LLM solutions — and leverage cutting-edge AI tools to accelerate development and empower teams.
+              I architect and build AI/LLM solutions — and build high-performance cultures where AI is a teammate, not just a tool.
             </p>
             <p className="text-base sm:text-lg text-zinc-500">
               Based in Europe. Available globally.
