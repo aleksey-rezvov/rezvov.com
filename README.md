@@ -148,6 +148,10 @@ You can also trigger deployment manually:
 └── .github/          # GitHub Actions workflows
 ```
 
+## For LLM / AI Assistants
+
+This README is optimized for human readers. For LLM consumption (Claude Code, Cursor, etc.), see [CLAUDE.md](CLAUDE.md) which provides a structured reference with quick navigation.
+
 ## License
 
 Private project - All rights reserved.
