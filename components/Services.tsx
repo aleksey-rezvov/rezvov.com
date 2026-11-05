@@ -44,11 +44,11 @@ export default function Services() {
             <ul className="list-none space-y-0.5 text-sm text-zinc-400 mb-3">
               <li>• <strong className="text-zinc-300">Direct communication</strong> — no layers</li>
               <li>• <strong className="text-zinc-300">Partner-led</strong> — senior dev/architect per project</li>
-              <li>• <strong className="text-zinc-300">Cost efficiency</strong> — 25th percentile pricing</li>
+              <li>• <strong className="text-zinc-300">Outcome-driven</strong> — partners share each project&apos;s profit</li>
               <li>• <strong className="text-zinc-300">Innovation</strong> — Go, Rust, LLM, Telegram Mini Apps</li>
             </ul>
             <p className="text-zinc-500 text-sm">
-              Budgets: from $5K USD; average ~$30K; largest managed to $400K; as subcontractor to $10M USD.
+              Budgets: from $5K USD; ongoing teams billed monthly; largest managed to $400K; as subcontractor to $10M USD.
             </p>
           </div>
 
