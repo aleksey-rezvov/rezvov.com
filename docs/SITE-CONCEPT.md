@@ -103,12 +103,12 @@ This document outlines the comprehensive concept for Alex Rezvov's personal webs
 **What Makes Us Different:**
 - **Direct communication**: No layers between client and development team
 - **Partner-led projects**: Senior developer/architect leads each project, personally invested in success
-- **Cost efficiency**: We fall into the 25th percentile of market pricing by minimizing organizational overhead
+- **Outcome-driven**: Partners share in each project's profit, so the people doing the work are paid for the result, not for the hours booked
 - **Innovation focus**: Active adoption of new technologies (Go, Rust, LLM-based solutions, Telegram Mini Apps)
 
 **Project Statistics:**
 - Minimum budget: $5,000 USD
-- Average project: ~$30,000 USD
+- Typical engagement: an ongoing team, billed monthly under time and materials
 - Largest managed projects: up to $400,000 USD
 - As subcontractor: projects up to $10,000,000 USD
 
