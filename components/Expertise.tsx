@@ -217,7 +217,7 @@ export default function Expertise() {
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-8 sm:mb-12">
           {[
             { value: '35+', label: 'Projects Delivered' },
-            { value: '18+', label: 'Years Experience' },
+            { value: '20+', label: 'Years Experience' },
             { value: '1000+', label: 'Specialists Hired' },
             { value: '$10M+', label: 'Project Budgets' },
           ].map((m) => (
