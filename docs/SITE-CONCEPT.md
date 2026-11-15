@@ -20,7 +20,7 @@ This document outlines the comprehensive concept for Alex Rezvov's personal webs
 
 ### 2.1 Career Highlights
 
-- 18+ years of experience in software development
+- 20+ years of experience in software development
 - Career path: from computer vision and C++ to modern AI/LLM solutions
 - Led teams of up to 50 engineers (200+ people total including support and operations)
 - Managed projects with budgets exceeding $10 million
@@ -76,7 +76,7 @@ This document outlines the comprehensive concept for Alex Rezvov's personal webs
 ### 2.5 Key Metrics
 
 - 35+ Projects Delivered
-- 18+ Years Experience
+- 20+ Years Experience
 - 1000+ Specialists Hired
 - $10M+ Project Budgets
 

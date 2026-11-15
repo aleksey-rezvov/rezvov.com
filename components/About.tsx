@@ -7,7 +7,7 @@ export default function About() {
           <div>
             <h3 className="text-lg font-semibold text-white mb-3">Career Highlights</h3>
             <p>
-              I&apos;m a technical leader with <strong className="text-white">18+ years</strong> of experience
+              I&apos;m a technical leader with <strong className="text-white">20+ years</strong> of experience
               in software development, from computer vision and C++ to modern AI/LLM solutions.
             </p>
             <p>

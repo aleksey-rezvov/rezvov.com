@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     default: "Alex Rezvov - CTO / Software Architect | AI & LLM Expert",
     template: "%s | Alex Rezvov",
   },
-  description: "CTO and Software Architect with 18+ years of experience. AI products and AI-powered development: LLM solutions, RAG, fine-tuning, team leadership. Founder of ForEach Partners. Based in Europe.",
+  description: "CTO and Software Architect with 20+ years of experience. AI products and AI-powered development: LLM solutions, RAG, fine-tuning, team leadership. Founder of ForEach Partners. Based in Europe.",
   keywords: ["CTO", "Software Architect", "AI Expert", "LLM", "Machine Learning", "RAG", "AI consulting", "Team Leadership", "Software Development", "Go", "Rust", "Python", "ForEach Partners", "Europe"],
   authors: [{ name: "Alex Rezvov", url: siteUrl }],
   creator: "Alex Rezvov",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Alex Rezvov - CTO / Software Architect | AI & LLM Expert",
-    description: "AI products. AI-powered processes. 18+ years building and leading teams. CTO specializing in AI/LLM solutions, RAG, and scalable architecture. ForEach Partners.",
+    description: "AI products. AI-powered processes. 20+ years building and leading teams. CTO specializing in AI/LLM solutions, RAG, and scalable architecture. ForEach Partners.",
     url: siteUrl,
     siteName: "Alex Rezvov",
     type: "website",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Alex Rezvov - CTO / Software Architect | AI & LLM Expert",
-    description: "AI products. AI-powered processes. CTO, 18+ years. AI/LLM solutions and team leadership.",
+    description: "AI products. AI-powered processes. CTO, 20+ years. AI/LLM solutions and team leadership.",
     images: [ogImage],
   },
   icons: {
@@ -91,7 +91,7 @@ export default function RootLayout({
               "givenName": "Alex",
               "familyName": "Rezvov",
               "jobTitle": "CTO / Software Architect",
-              "description": "CTO and Software Architect specializing in AI/LLM-powered solutions, RAG, fine-tuning, and team leadership with 18+ years of experience. Founder of ForEach Partners.",
+              "description": "CTO and Software Architect specializing in AI/LLM-powered solutions, RAG, fine-tuning, and team leadership with 20+ years of experience. Founder of ForEach Partners.",
               "url": siteUrl,
               "image": ogImage,
               "sameAs": [
